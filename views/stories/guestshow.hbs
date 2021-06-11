@@ -1,0 +1,27 @@
+<section class="title-container flex-center full-width-container">
+	<header class="titlebar flex-center">
+		<a href="/"><img src="logo.png" class="logo-format"></a>
+	</header>
+</section>
+<div>
+    <div>
+        <h3 class="dashboardcss">{{story.title}}
+        </h3>
+        <div class="font-title-readmore">
+            <div>
+                    <img src="{{story.user.image}}" class="circle-image" alt="Image cant be displayed">
+            </div>
+            <div>
+                    <span>{{story.user.displayName}}</span>
+            </div>
+        </div>
+        <div>
+            <div  class="all-margin">
+                    <span>{{formatDate story.createdAt 'MM Do YYYY, h:mm:ss a'}}</span> 
+            </div>
+            <div class="all-margin">
+                {{{story.body}}}
+            </div>
+        </div>
+    </div>
+</div>

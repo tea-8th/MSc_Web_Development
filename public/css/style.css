@@ -1,0 +1,173 @@
+*{
+	margin:0;
+	font-family: sans-serif;
+}
+.title-container{
+	background-color: black;
+	height: 10%;
+	display: flex;
+	justify-content: flex-start;
+}
+.titlebar{
+	height: 80%;
+	width: 30%;
+	margin-top: 0.5%;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.full-width-container{
+	width: 100%;
+}
+.logo-format{
+	width: 50%;
+	margin-left: 20%;
+}
+.btndecoration{
+	background-color: white;
+	list-style-type: none;
+	margin: 5%;
+	margin-left: 15%;
+}
+.nolink{
+	text-decoration: none;
+	font-size: 1.5em;
+}
+.flexie{
+	display:flex;
+	justify-content: flex-end;
+	width: 60%;
+}
+.dashboardcss{
+	text-align: center;
+	font-size: 3em;
+	margin-top: 1%;
+}
+.add_btn{
+	width: 5%;
+	float:right;
+	position:fixed;
+	bottom:5%;
+	right:5%;
+}
+.left-text{
+	margin-left: 5%;
+}
+.table-format{
+	background-color: lightgrey;
+	margin-left: 4%;
+	width: 90%;
+	text-align: center;
+	border-radius: 15px;
+}
+.float-left{
+	float: left;
+	margin-left: 2%;
+}
+.no-decoration{
+	text-decoration:none;
+	color:black;
+	font-weight: bold;
+}
+
+/* Stories */
+
+.story-format {
+	background-color: lightgrey;
+	margin: 2% 1%;
+	border-radius: 15px;
+}
+.left-margin{
+	margin-left: 1%;
+}
+
+
+/*Form*/
+.formatting-input{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 1%;
+	outline: 0;
+	padding: 10px;
+	width: 90%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+textarea{
+	background: red;
+}
+
+.left-margin{
+	margin-left: 1%;
+}
+a{
+	text-decoration: none;
+}
+.edit-icon{
+	width: 4%;
+	right: 2%;
+}
+.float-right{
+	float:right;
+	margin-right: 1%;
+}
+.all-margin{
+	margin:1%;
+	margin-left:10%;
+	margin-right:10%;
+	text-align: justify;
+	
+}
+.btm-margin{
+	margin-bottom: 5%;
+}
+.font-title-readmore{
+	text-align: center;
+	margin-top: 1%;
+	font-weight: bold;
+}
+.circle-image{
+	border-radius: 50%;
+}
+.center-align{
+	text-align: center;
+}
+.top-pad{
+	padding-top: 1%;
+}
+.btm-pad{
+	padding-bottom: 1%;
+}
+
+@media screen and (max-width: 500px){
+	.flexie{
+		display:flex;
+		justify-content: flex-start;
+		width: 5%;
+		margin: 5%;
+	}
+	.nolink{
+		font-size: 1em;
+	}
+	.btndecoration{
+		margin-left: 50%;
+	}
+	.titlebar{
+		margin-left: 5%;
+	}
+	.logo-format{
+		width: 100%;
+		margin-left: 20%;
+	}
+}

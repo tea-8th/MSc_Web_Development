@@ -1,0 +1,30 @@
+<section class="title-container flex-center full-width-container">
+	<header class="titlebar flex-center">
+		<a href="/"><img src="logo.png" class="logo-format"></a>
+	</header>
+</section>
+<h1 class="dashboardcss">Stoires</h1>
+<div>
+    {{#each stories}}
+        <div class="story-format">
+            <div>
+                <div class="left-margin">
+                    <h2 class="center-align top-pad">{{title}}</h2>
+                    <br>
+                    <div>
+                        <img src="{{user.image}}" alt="Image cant be displayed" class="circle-image">
+                    </div>
+                    <b>
+                       {{user.displayName}}
+                    </b>
+                </div>
+                <div class="left-margin">
+                    <a href="/stories/{{_id}}" class="float-right">Read More</a>
+                    <p class="btm-pad">{{stripTags (truncate body 150)}}</p>
+                </div>
+            </div>
+        </div>
+    {{else}}
+        <p>No stoires to display</p>
+    {{/each}}
+</div>

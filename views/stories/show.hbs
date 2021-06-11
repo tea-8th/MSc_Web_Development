@@ -1,0 +1,26 @@
+<div>
+    <div>
+        <h3 class="dashboardcss">{{story.title}}
+            <small>{{{editIcon story.user user story._id false}}}</small>
+        </h3>
+        <div class="font-title-readmore">
+            <div>
+                    <img src="{{story.user.image}}" class="circle-image" alt="Image cant be displayed">
+            </div>
+            <div>
+                    <span>{{story.user.displayName}}</span>
+            </div>
+            <div>
+                <a href="/stories/user/{{story.user._id}}">More From {{story.user.firstName}}</a>
+            </div>
+        </div>
+        <div>
+            <div  class="all-margin">
+                    <span>{{formatDate story.createdAt 'MM Do YYYY, h:mm:ss a'}}</span> 
+            </div>
+            <div class="all-margin">
+                {{{story.body}}}
+            </div>
+        </div>
+    </div>
+</div>

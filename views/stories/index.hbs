@@ -1,0 +1,28 @@
+<h1 class="dashboardcss">Article</h1>
+<div>
+    {{#each stories}}
+        <div class="story-format">
+            <div>
+                <div>
+                    {{{editIcon user ../user _id}}}
+                </div>
+                <div class="left-margin">
+                    <h2 class="center-align top-pad">{{title}}</h2>
+                    <br>
+                    <div>
+                        <img src="{{user.image}}" alt="Image cant be displayed" class="circle-image">
+                    </div>
+                    <a href="/stories/user/{{user._id}}">
+                       {{user.displayName}}
+                    </a>
+                </div>
+                <div class="left-margin">
+                    <a href="/stories/{{_id}}" class="float-right">Read More</a>
+                    <p class="btm-pad">{{stripTags (truncate body 150)}}</p>
+                </div>
+            </div>
+        </div>
+    {{else}}
+        <p>No stoires to display</p>
+    {{/each}}
+</div>
